@@ -40,3 +40,6 @@ variable tag_environment {
 variable tag_owner {
   default = ""
 }
+variable skip_final_snapshot {
+  default = false
+}

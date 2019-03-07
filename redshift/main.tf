@@ -66,5 +66,6 @@ resource "aws_redshift_cluster" "default" {
   node_type          = "${var.node_type}"
   cluster_type       = "${var.cluster_type}"
   iam_roles = ["${aws_iam_role.redshift_s3_access_role.arn}"]
-   tags = "${local.common_tags}"
+  tags = "${local.common_tags}"
+  skip_final_snapshot = "${var.skip_final_snapshot}"
 }

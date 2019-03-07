@@ -25,4 +25,5 @@ module "redshift" {
   cluster_type       = "single-node"
   tag_environment = "dev"
   tag_owner = "vignesh"
+  skip_final_snapshot = true
 }
